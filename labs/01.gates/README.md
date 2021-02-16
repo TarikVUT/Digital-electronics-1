@@ -1,13 +1,14 @@
 # 01-Gates
 ## The Lab exercise 1
+### DeMorgan's Laws
+[Link : xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1)
 
 
 
 
 
 
-
-##### Code in VHDL
+* * Code in VHDL* *
 ``` VHDL
 library ieee;                  -- Standard library
 use ieee.std_logic_1164.all;   -- Package for data types and logic operations
@@ -38,8 +39,17 @@ begin
 end architecture dataflow;
 
 ```
-
-
+### All functions we used 
+| **C** | **B** |**A** |**F** |**F NAND**|**F NOR**|
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 | 1 | 1 | 1 |
+| 0 | 0 | 1 | 0 | 0 | 0 |
+| 0 | 1 | 0 | 0 | 0 | 0 |
+| 0 | 1 | 1 | 0 | 0 | 0 |
+| 1 | 0 | 0 | 1 | 1 | 1 |
+| 1 | 0 | 1 | 1 | 1 | 1 |
+| 1 | 1 | 0 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 0 | 0 | 0 |
 
 
 
