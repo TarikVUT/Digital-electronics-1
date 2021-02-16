@@ -42,7 +42,7 @@ end architecture dataflow;
 ```
 
 
-###Table
+***Tabulka
 
 | **C** | **B** |**A** |**F** |**F NAND**|**F NOR**|
 | :-: | :-: | :-: | :-: | :-: | :-: |
