@@ -65,11 +65,11 @@ end architecture dataflow;
 <img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%201.png" /> 
 
 # Experiments on your own
-\begin{align*}
-    x.y + x.z =& x.(y + z)\\
-    (x + y).(x + z) =& x+(y . z)\\
-  
-\end{align*}
+```
+    x.y + x.z = x.(y + z)
+   (x + y).(x + z) = x+(y . z)
+  ```
+
 
 
 
