@@ -49,6 +49,7 @@ end architecture dataflow;
 
 
 ***Tabulka***
+Na tabulce vidime že ty tři funkce maji stejny vystup
 
 | **C** | **B** |**A** |**F** |**F NAND**|**F NOR**|
 | :-: | :-: | :-: | :-: | :-: | :-: |
