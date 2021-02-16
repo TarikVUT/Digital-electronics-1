@@ -74,6 +74,7 @@ end architecture dataflow;
 
 
 [Link for VHDL code in **EDA playgraound**](https://www.edaplayground.com/x/ZcZH)
+### VHDL code
 ```VHDL
 library ieee;               -- Standard library
 use ieee.std_logic_1164.all;-- Package for data types and logic operations 
