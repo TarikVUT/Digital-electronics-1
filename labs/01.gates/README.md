@@ -8,7 +8,7 @@
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;f(c,b,a)&space;=&~&space;\overline{b}\cdot&space;a&space;&plus;&space;\overline{c}\cdot&space;\overline{b}\\&space;f(c,b,a)_{\textup{NAND}}&space;=&(\overline{\overline{\overline{b}\cdot&space;a}).(\overline{\overline{c}\cdot&space;\overline{b}}})\\&space;f(c,b,a)_{\textup{NOR}}&space;=&(\overline{\overline{\overline{b}\&space;&plus;&space;a})&plus;(\overline{\overline{c}\&space;&plus;&space;\overline{b}}})\\&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;f(c,b,a)&space;=&~&space;\overline{b}\cdot&space;a&space;&plus;&space;\overline{c}\cdot&space;\overline{b}\\&space;f(c,b,a)_{\textup{NAND}}&space;=&(\overline{\overline{\overline{b}\cdot&space;a}).(\overline{\overline{c}\cdot&space;\overline{b}}})\\&space;f(c,b,a)_{\textup{NOR}}&space;=&(\overline{\overline{\overline{b}\&space;&plus;&space;a})&plus;(\overline{\overline{c}\&space;&plus;&space;\overline{b}}})\\&space;\end{align*}" title="\begin{align*} f(c,b,a) =&~ \overline{b}\cdot a + \overline{c}\cdot \overline{b}\\ f(c,b,a)_{\textup{NAND}} =&(\overline{\overline{\overline{b}\cdot a}).(\overline{\overline{c}\cdot \overline{b}}})\\ f(c,b,a)_{\textup{NOR}} =&(\overline{\overline{\overline{b}\ + a})+(\overline{\overline{c}\ + \overline{b}}})\\ \end{align*}" /></a>
 
-####schema.
+**schema**.
 
 <img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%203.png" /> 
 
@@ -64,7 +64,7 @@ end architecture dataflow;
 ***VHDL simulation***
 <img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%201.png" /> 
 
-##Experiments on your own
+**Experiments on your own
 [Link for VHDL code in **EDA playgraound**](https://www.edaplayground.com/x/ZcZH)
 ```VHDL
 library ieee;               -- Standard library
@@ -99,4 +99,5 @@ end architecture dataflow;
 ```
 ***VHDL simulation***
 <img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%202.png" /> 
-
+```
+Z obrazku vidime že F1 = F2 , taky F3 = F4 .
