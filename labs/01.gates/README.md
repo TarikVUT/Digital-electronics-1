@@ -5,10 +5,8 @@
 
 
 
-
-
-
 * * Code in VHDL* *
+[Link for VHDL code in **EDA playgraound**](https://www.edaplayground.com/x/CT3M)
 ``` VHDL
 library ieee;                  -- Standard library
 use ieee.std_logic_1164.all;   -- Package for data types and logic operations
