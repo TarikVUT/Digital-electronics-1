@@ -59,6 +59,7 @@ end architecture dataflow;
 <img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%201.png" /> 
 
 **Experiments on your own**
+[Link for VHDL code in **EDA playgraound**](https://www.edaplayground.com/x/ZcZH)
 ```VHDL
 library ieee;               -- Standard library
 use ieee.std_logic_1164.all;-- Package for data types and logic operations 
