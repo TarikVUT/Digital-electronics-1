@@ -54,7 +54,7 @@ end architecture dataflow;
 | 1 | 0 | 1 | 1 | 1 | 1 |
 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
-<img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%201.png> 
+<img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%201.png" /> 
 
 
 
