@@ -54,9 +54,41 @@ end architecture dataflow;
 | 1 | 0 | 1 | 1 | 1 | 1 |
 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
+
+###*VHDL simulation
 <img src="https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/01.gates/images/VHDL%201.png" /> 
 
+##**Experiments on your own
+```VHDL
+library ieee;               -- Standard library
+use ieee.std_logic_1164.all;-- Package for data types and logic operations 
 
+------------------------------------------------------------------------
+-- Entity declaration for basic gates
+------------------------------------------------------------------------
+entity gates is
+    port(
+        x_i     : in  std_logic;         -- Data input
+        y_i     : in  std_logic;  		-- Data input
+        z_i     : in  std_logic;         -- Data input
+        F1_o     : out std_logic;          -- OR output function
+        F2_o     : out std_logic;        -- AND output function
+        F3_o     : out std_logic;          -- XOR output function
+        F4_o     : out std_logic        -- AND output function
+    );
+end entity gates;
 
+------------------------------------------------------------------------
+-- Architecture body for basic gates
+------------------------------------------------------------------------
+architecture dataflow of gates is
+begin
+ F1_o <= (x_i and y_i) or (x_i and z_i);
+ F2_o <=  x_i and (y_i or z_i);
+ F3_o <= (x_i or y_i) and (x_i or z_i);
+ F4_o <= (x_i) or (y_i and z_i);
+end architecture dataflow;
+
+```
 
 
