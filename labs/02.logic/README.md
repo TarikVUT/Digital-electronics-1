@@ -22,7 +22,7 @@
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
-![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)
+![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)\
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%203.png?raw=true)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%204.png?raw=true)
 
