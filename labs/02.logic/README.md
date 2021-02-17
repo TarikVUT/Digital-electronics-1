@@ -23,7 +23,7 @@
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
 
-![greater](images/vhdl 3.png)
+![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%203.png?raw=true)
 
 
 
