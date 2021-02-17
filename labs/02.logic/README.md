@@ -23,7 +23,7 @@
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
 
-
+![greater](images/vhadl 3.PNG)
 
 
 
