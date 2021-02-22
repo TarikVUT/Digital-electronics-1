@@ -1,5 +1,5 @@
 
-# The Lab 2 Combinational logic\
+# The Lab 2 Combinational logic
 [xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/02.logic)
 
 ### ***(1)***
