@@ -1,7 +1,7 @@
 
-# The Lab exercise 2
+# The Lab 2 Combinational logic
 
-
+### ***(1)***
 ***Tabulka***\
 | **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -21,7 +21,7 @@
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-
+## ***(2)***
 ## Karnaugh Map (B equals A)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)\
 ## Karnaugh Map (B greater than A)
