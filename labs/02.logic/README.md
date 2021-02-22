@@ -23,7 +23,7 @@
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 ## ***(2)***
 ## Karnaugh Map (B equals A)
-![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)\
+![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)
 ## Karnaugh Map (B greater than A)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%203.png?raw=true)
 ## Karnaugh Map (A greater than B)
@@ -221,7 +221,7 @@ end architecture testbench;
 
 ```
 ### Přihlašit chybu error
-je to chyba v řadku čislo --8
+je to chyba v řadku čislo --8\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%206.PNG)
 
 ### ***Simulace***
