@@ -22,7 +22,7 @@
 | 13 | 1 1 | 0 1 | 1 | 0 | 0 |
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
-## ***(2)***
+## ***(2) 2-bit***
 ## Karnaugh Map (B equals A)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)
 ## Karnaugh Map (B greater than A)
@@ -30,7 +30,7 @@
 ## Karnaugh Map (A greater than B)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%204.png?raw=true)
 
-## ***(3)***
+## ***(3) 4-bit***
 ### Code in VHDL
 ### *Design.vhd*
 ``` VHDL
