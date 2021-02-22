@@ -1,5 +1,6 @@
 
-# The Lab 2 Combinational logic
+# The Lab 2 Combinational logic\
+[xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/02.logic)
 
 ### ***(1)***
 ***Tabulka***
@@ -30,7 +31,8 @@
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%204.png?raw=true)
 
 ## ***(3)***
-### Design.vhd
+### Code in VHDL
+### *Design.vhd*
 ``` VHDL
 
 library ieee;
@@ -66,7 +68,7 @@ end architecture Behavioral;
 
 
 ```
-### Testbench.vhd
+### *Testbench.vhd*
 ```VHDL
 library ieee;
 use ieee.std_logic_1164.all;
