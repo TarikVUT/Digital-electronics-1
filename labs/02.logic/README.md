@@ -221,6 +221,7 @@ end architecture testbench;
 
 ```
 ### Přihlašit chybu error
+[Code in EDA playground](https://www.edaplayground.com/x/8Tj2)
 je to chyba v řadku čislo --8\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%206.PNG)
 
