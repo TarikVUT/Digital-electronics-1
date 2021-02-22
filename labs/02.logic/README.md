@@ -1,5 +1,6 @@
 
 # The Lab 2 Combinational logic
+[xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/02.logic)
 
 ### ***(1)***
 ***Tabulka***
@@ -23,14 +24,15 @@
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 ## ***(2)***
 ## Karnaugh Map (B equals A)
-![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)\
+![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)
 ## Karnaugh Map (B greater than A)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%203.png?raw=true)
 ## Karnaugh Map (A greater than B)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%204.png?raw=true)
 
 ## ***(3)***
-### Design.vhd
+### Code in VHDL
+### *Design.vhd*
 ``` VHDL
 
 library ieee;
@@ -66,7 +68,7 @@ end architecture Behavioral;
 
 
 ```
-### Testbench.vhd
+### *Testbench.vhd*
 ```VHDL
 library ieee;
 use ieee.std_logic_1164.all;
@@ -220,3 +222,12 @@ end architecture testbench;
 
 
 ```
+### Přihlašit chybu error
+[Code in EDA playground](https://www.edaplayground.com/x/8Tj2)\
+je to chyba v řadku čislo --8\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%206.PNG)
+
+### ***Simulace***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%205.PNG)
+
+
