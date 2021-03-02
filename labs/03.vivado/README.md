@@ -1,6 +1,6 @@
 
 # 3.Vivado
-[xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/03.vivado)
+[xalkan02 Digital-electronics-1 3.vivado](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/03.vivado)
 
 ### (1) switches and 16 LEDs on Nexys A7 
 
