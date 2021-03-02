@@ -145,18 +145,20 @@ end architecture testbench;
 After open program vivado ,click on ***Create new project*** then \
 click **Next**
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG) \
+<br/>
 ***(2)*** 
 Add **project name.**\
 choose **project location.**\
 click **Next**\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG) \
+<br/>
 ***(3)*** 
 For **project type**,choose ***RTL***.\
 Click **Next** \
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) \
 ***(4)*** 
-Change **Target language**and **Simulator language** to ***VHDL***. \
+Change **Target language** and **Simulator language** to ***VHDL***. \
 Click on **create File**. \
 File type ->***VHDL*** \
 Add **File Name**. \
@@ -172,7 +174,7 @@ Click ->**File**  , Click -> **add Sources** \
 ***(8)*** Choose **add or create constraints** , Click->**Next** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/12.png) \
 ***(9)*** Click **Create File**
-choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish** \
+choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish**\
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png) \
 ***(10)*** We can open our *XDC* file -> click on **Constraints** -> **constrs** then our **file** the file will be ***empty*** \
