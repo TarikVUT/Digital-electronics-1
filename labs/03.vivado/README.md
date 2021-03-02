@@ -4,24 +4,25 @@
 
 ### ***(1)***
 ***Tabulka***
-| **Dec. equivalent** | **B[1:0]** | **A[1:0]** | **B is greater than A** | **B equals A** | **B is less than A** |
-| :-: | :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 0 | 0 0 | 0 | 1 | 0 |
-| 1 | 0 0 | 0 1 | 0 | 0 | 1 |
-| 2 | 0 0 | 1 0 | 0 | 0 | 1 |
-| 3 | 0 0 | 1 1 | 0 | 0 | 1 |
-| 4 | 0 1 | 0 0 | 1 | 0 | 0 |
-| 5 | 0 1 | 0 1 | 0 | 1 | 0 |
-| 6 | 0 1 | 1 0 | 0 | 0 | 1 |
-| 7 | 0 1 | 1 1 | 0 | 0 | 1 |
-| 8 | 1 0 | 0 0 | 1 | 0 | 0 |
-| 9 | 1 0 | 0 1 | 1 | 0 | 0 |
-| 10 | 1 0 | 1 0 | 0 | 1 | 0 |
-| 11 | 1 0 | 1 1 | 0 | 0 | 1 |
-| 12 | 1 1 | 0 0 | 1 | 0 | 0 |
-| 13 | 1 1 | 0 1 | 1 | 0 | 0 |
-| 14 | 1 1 | 1 0 | 1 | 0 | 0 |
-| 15 | 1 1 | 1 1 | 0 | 1 | 0 |
+
+| **Switch** | **Connection** | **Pin** | **LED** | **Connection** | **Pin** |
+| :-: | :-: | :-: | :-: |
+| SW0 | a_i[0] | J15 | LED0 | f_o[0] | H17 |
+| SW1 | a_i[1] | L16 |LED1 | f_o[1] | K15 |
+| SW2 | b_i[0] | M13 |LED2 | X | J13 |
+| SW3 | b_i[1] | R15 |LED3 | X | N14 |
+| SW4 | c_i[0] | R17 |LED4 | X | R18 |
+| SW5 | c_i[1] | T18 |LED5 | X | V17 |
+| SW6 | d_i[0] | U18 |LED6 | X | U17 |
+| SW7 | d_i[1] | R13 |LED7 | X | U16 |
+| SW8 | X  | T8 |LED8 | X | V16 |
+| SW9 | X  | U8 |LED9 | X | T15 |
+| SW10 | X  | R16 |LED10 | X | U14 |
+| SW11 | X  | T13 |LED11 | X | T16 |
+| SW12 | X  | H6 |LED12 | X | V15 |
+| SW13 | X  | U12 |LED13 | X | V14 |
+| SW14 | sel_i[0]  | U11 |LED14 | X | V12 |
+| SW15 | sel_i[1]  | V10 |LED15 | X | V11 |
 ## ***(2)***
 ## Karnaugh Map (B equals A)
 ![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)
