@@ -155,7 +155,7 @@ click **Next**\
 <br/>
 ***(3)*** 
 For **project type**,choose ***RTL***.\
-Click **Next**\
+Click **Next**
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) \
 <br/>
@@ -182,7 +182,7 @@ Click ->**File**  , Click -> **add Sources** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/12.png) \
 <br/>
 ***(9)*** Click **Create File**
-choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish** \
+choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish** 
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png) \
 <br/>
