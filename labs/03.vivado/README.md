@@ -164,13 +164,17 @@ Click **Ok** then **Next**\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG)\
 ***(5)*** And now ,choose **Boards** ,Board's name is ***Nexys A7-50T***,then click **Next**\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/6.PNG)\
-Click **Ok**\
+***(6)*** Click **Ok**\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG)\
 
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/8.png)\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/11.png)\
 
-![]()
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/12.png)\
 
-![]()
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png)\
 
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/14.png)\
 
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/15.png)\
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/17.png)\
