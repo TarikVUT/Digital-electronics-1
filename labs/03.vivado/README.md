@@ -152,7 +152,7 @@ click **Next**\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG) 
 ***(3)*** 
 For **project type**,choose ***RTL***.\
-Click **Next**\
+Click **Next** \
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) 
 ***(4)*** 
@@ -160,11 +160,11 @@ Change **Target language**and **Simulator language** to ***VHDL***. \
 Click on **create File**. \
 File type ->***VHDL*** \
 Add **File Name**. \
-Click **Ok** then **Next**\
+Click **Ok** then **Next** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG)
-***(5)*** And now ,choose **Boards** ,Board's name is ***Nexys A7-50T***,then click **Next**\
+***(5)*** And now ,choose **Boards** ,Board's name is ***Nexys A7-50T***,then click **Next** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/6.PNG)
-***(6)*** Click **Ok**\
+***(6)*** Click **Ok** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG)
 ***(7)*** To adding **XDC constraints file**,\
 Click ->**File**  , Click -> **add Sources** \
@@ -175,7 +175,7 @@ Click ->**File**  , Click -> **add Sources** \
 choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish** \
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png)
-***(10)*** We can open our *XDC* file -> click on **Constraints** -> **constrs** then our **file** the file will be *empty
+***(10)*** We can open our *XDC* file -> click on **Constraints** -> **constrs** then our **file** the file will be ***empty*** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/14.png)
 ***(11)*** Copy the code for *Nexys-A7-50T-Master.xdc* from Github \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/15.png)
