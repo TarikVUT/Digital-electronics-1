@@ -144,40 +144,40 @@ end architecture testbench;
  ***(1)***
 After open program vivado ,click on ***Create new project*** then \
 click **Next**
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG) 
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG) \
 ***(2)*** 
 Add **project name.**\
 choose **project location.**\
 click **Next**\
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG) 
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG) \
 ***(3)*** 
 For **project type**,choose ***RTL***.\
 Click **Next** \
 
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) 
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) \
 ***(4)*** 
 Change **Target language**and **Simulator language** to ***VHDL***. \
 Click on **create File**. \
 File type ->***VHDL*** \
 Add **File Name**. \
 Click **Ok** then **Next** \
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG) \
 ***(5)*** And now ,choose **Boards** ,Board's name is ***Nexys A7-50T***,then click **Next** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/6.PNG)
 ***(6)*** Click **Ok** \
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG) \
 ***(7)*** To adding **XDC constraints file**,\
 Click ->**File**  , Click -> **add Sources** \
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/11.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/11.png) \
 ***(8)*** Choose **add or create constraints** , Click->**Next** \
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/12.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/12.png) \
 ***(9)*** Click **Create File**
 choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish** \
 
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png) \
 ***(10)*** We can open our *XDC* file -> click on **Constraints** -> **constrs** then our **file** the file will be ***empty*** \
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/14.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/14.png) \
 ***(11)*** Copy the code for *Nexys-A7-50T-Master.xdc* from Github \
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/15.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/15.png) \
 ***(12)*** Paste the Code in our empty **XDC** file .\
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/17.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/17.png) \
