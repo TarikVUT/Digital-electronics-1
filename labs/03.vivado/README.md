@@ -139,8 +139,38 @@ end architecture testbench;
 
 ```
 ***simulation***\
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG) 
 ## ***(3)***
-### Code in VHDL
+ ***(1)***
+After open program vivado ,click on ***Create new project*** then \
+click **Next**
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG) \
+***(2)*** 
+Add **project name.**\
+choose **project location.**\
+click **Next**\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG) \
+***(3)*** 
+For **project type**,choose ***RTL***.\
+Click **Next**\
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) \
+***(4)*** 
+Change **Target language**and **Simulator language** to ***VHDL***. \
+Click on **create File**. \
+File type ->***VHDL*** \
+Add **File Name**. \
+Click **Ok** then **Next**\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG)\
+***(5)*** And now ,choose **Boards** ,Board's name is ***Nexys A7-50T***,then click **Next**\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/6.PNG)\
+Click **Ok**\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG)\
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/8.png)\
+
+![]()
+
+![]()
 
 
