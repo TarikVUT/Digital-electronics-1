@@ -186,7 +186,7 @@ choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish**
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png) \
 <br/>
-***(10)*** We can open our *XDC* file -> click on **Constraints** -> **constrs** then our **file** the file will be ***empty*** \
+***(10)*** We can open our **XDC** file -> click on **Constraints** -> **constrs** then our **file** the file will be ***empty*** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/14.png) \
 <br/>
 ***(11)*** Copy the code for ***Nexys-A7-50T-Master.xdc*** from Github \
