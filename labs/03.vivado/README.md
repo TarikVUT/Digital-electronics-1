@@ -1,8 +1,8 @@
 
 # 3.Vivado
-[xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/02.logic)
+[xalkan02 Digital-electronics-1 3.vivado](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/03.vivado)
 
-### ***(1)***
+### (1) switches and 16 LEDs on Nexys A7 
 
 ***The table of 16 slide switches and 16 LEDs on Nexys A7 board***
 
@@ -24,7 +24,8 @@
 | SW13 | X  | U12 |LED13 | X | V14 |
 | SW14 | sel_i[0]  | U11 |LED14 | X | V12 |
 | SW15 | sel_i[1]  | V10 |LED15 | X | V11 |
-## ***(2)***
+
+## (2) Two-bit wide 4-to-1 multiplexer
 ### *Design.vhd*
 ***VHDL architecture from source file mux_2bit_4to1.vhd***
 ``` vhdl
@@ -140,37 +141,56 @@ end architecture testbench;
 ```
 ***simulation***\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG) 
-## ***(3)***
+## (3) A Vivado tutorial 
  ***(1)***
 After open program vivado ,click on ***Create new project*** then \
 click **Next**
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG) \
+<br/>
 ***(2)*** 
 Add **project name.**\
 choose **project location.**\
 click **Next**\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG) \
+<br/>
 ***(3)*** 
 For **project type**,choose ***RTL***.\
-Click **Next**\
+Click **Next**
 
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) \
+<br/>
 ***(4)*** 
-Change **Target language**and **Simulator language** to ***VHDL***. \
+Change **Target language** and **Simulator language** to ***VHDL***. \
 Click on **create File**. \
 File type ->***VHDL*** \
 Add **File Name**. \
-Click **Ok** then **Next**\
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG)\
-***(5)*** And now ,choose **Boards** ,Board's name is ***Nexys A7-50T***,then click **Next**\
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/6.PNG)\
-Click **Ok**\
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG)\
+Click **Ok** then **Next** \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG) \
+<br/>
+***(5)*** And now ,choose **Boards** ,Board's name is ***Nexys A7-50T***,then click **Next** \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/6.PNG)
+<br/>
+<br/>
+***(6)*** Click **Ok** \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG) \
+<br/>
+***(7)*** To adding **XDC constraints file**,\
+Click ->**File**  , Click -> **add Sources** \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/11.png) \
+<br/>
+***(8)*** Choose **add or create constraints** , Click->**Next** \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/12.png) \
+<br/>
+***(9)*** Click **Create File**
+choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish** 
 
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/8.png)\
-
-![]()
-
-![]()
-
-
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/13.png) \
+<br/>
+***(10)*** We can open our **XDC** file -> click on **Constraints** -> **constrs** then our **file** the file will be ***empty*** \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/14.png) \
+<br/>
+***(11)*** Copy the code for ***Nexys-A7-50T-Master.xdc*** from Github \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/15.png) \
+<br/>
+***(12)*** Paste the Code in our empty **XDC** file .\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/17.png) 
