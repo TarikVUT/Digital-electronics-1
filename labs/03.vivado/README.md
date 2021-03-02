@@ -141,7 +141,7 @@ end architecture testbench;
 ```
 ***simulation***\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG) 
-## ***(3) A Vivado tutorial ***
+## (3) A Vivado tutorial 
  ***(1)***
 After open program vivado ,click on ***Create new project*** then \
 click **Next**
