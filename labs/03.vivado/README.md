@@ -1,9 +1,10 @@
 
-# The Lab 2 Combinational logic
+# 3.Vivado
 [xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/02.logic)
 
 ### ***(1)***
-***Tabulka***
+
+***The table of 16 slide switches and 16 LEDs on Nexys A7 board***
 
 | **Switch** | **Connection** | **Pin** | **LED** | **Connection** | **Pin** |
 | :-: | :-: | :-: | :-: |:-: |:-: |
@@ -24,12 +25,7 @@
 | SW14 | sel_i[0]  | U11 |LED14 | X | V12 |
 | SW15 | sel_i[1]  | V10 |LED15 | X | V11 |
 ## ***(2)***
-## Karnaugh Map (B equals A)
-![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%202.png?raw=true)
-## Karnaugh Map (B greater than A)
-![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%203.png?raw=true)
-## Karnaugh Map (A greater than B)
-![greater](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/02.logic/images/vhdl%204.png?raw=true)
+
 
 ## ***(3)***
 ### Code in VHDL
