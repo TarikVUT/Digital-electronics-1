@@ -141,6 +141,22 @@ end architecture testbench;
 ***simulation***\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG)
 ## ***(3)***
-### Code in VHDL
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG)
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG)
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG)
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/5.PNG)
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/6.PNG)
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/7.PNG)
+
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/8.png)
+
+![]()
+
+![]()
 
 
