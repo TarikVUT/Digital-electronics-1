@@ -138,6 +138,8 @@ begin
 end architecture testbench;
 
 ```
+***simulation***\
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG)
 ## ***(3)***
 ### Code in VHDL
 
