@@ -1,8 +1,8 @@
 
 # 3.Vivado
-[xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/02.logic)
+[xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/03.vivado)
 
-### ***(1)***
+### ***(1) switches and 16 LEDs on Nexys A7 ***
 
 ***The table of 16 slide switches and 16 LEDs on Nexys A7 board***
 
@@ -24,7 +24,7 @@
 | SW13 | X  | U12 |LED13 | X | V14 |
 | SW14 | sel_i[0]  | U11 |LED14 | X | V12 |
 | SW15 | sel_i[1]  | V10 |LED15 | X | V11 |
-## ***(2)***
+## ***(2) Two-bit wide 4-to-1 multiplexer***
 ### *Design.vhd*
 ***VHDL architecture from source file mux_2bit_4to1.vhd***
 ``` vhdl
@@ -140,7 +140,7 @@ end architecture testbench;
 ```
 ***simulation***\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG) 
-## ***(3)***
+## ***(3) A Vivado tutorial ***
  ***(1)***
 After open program vivado ,click on ***Create new project*** then \
 click **Next**
@@ -187,7 +187,7 @@ choose **File type** ***XDC*** , add **File Name** then **Ok** -> **Finish**\
 ***(10)*** We can open our *XDC* file -> click on **Constraints** -> **constrs** then our **file** the file will be ***empty*** \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/14.png) \
 <br/>
-***(11)*** Copy the code for *Nexys-A7-50T-Master.xdc* from Github \
+***(11)*** Copy the code for ***Nexys-A7-50T-Master.xdc*** from Github \
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/15.png) \
 <br/>
 ***(12)*** Paste the Code in our empty **XDC** file .\
