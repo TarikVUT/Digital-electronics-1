@@ -139,20 +139,20 @@ end architecture testbench;
 
 ```
 ***simulation***\
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/10.PNG) 
 ## ***(3)***
 
 After open program vivado ,click on ***Create new project*** then \
 add **project name.**\
 choose **project location.**\
 click **Next**
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/2.PNG) \
 
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/3.PNG) \
 For **project type** ,choose ***RTL***. \
 Click **Next**
 
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/03.vivado/images/4.PNG) \
 Change **Target language**and **Simulator language** to ***VHDL***. \
 Click on **create File**. \
 File type ->***VHDL*** \
