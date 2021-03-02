@@ -6,7 +6,7 @@
 ***Tabulka***
 
 | **Switch** | **Connection** | **Pin** | **LED** | **Connection** | **Pin** |
-| :-: | :-: | :-: | :-: |
+| :-: | :-: | :-: | :-: |:-: |:-: |
 | SW0 | a_i[0] | J15 | LED0 | f_o[0] | H17 |
 | SW1 | a_i[1] | L16 |LED1 | f_o[1] | K15 |
 | SW2 | b_i[0] | M13 |LED2 | X | J13 |
