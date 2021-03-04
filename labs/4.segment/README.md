@@ -1,6 +1,6 @@
 
 # 4.Segment
-[xalkan02 Digital-electronics-1 - segment](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/4.segment)
+[xalkan02 Digital-electronics-1 - segment](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/4.segment)</b>
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/1.PNG)
 ### (1) table with connection of 7-segment displays on Nexys A7 board.
 | **Hex** | **Input** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
