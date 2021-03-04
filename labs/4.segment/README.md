@@ -1,5 +1,6 @@
 
 # 4.Segment
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/1.PNG)
 ### 1 table with connection of 7-segment displays on Nexys A7 board
 | **Hex** | **Input** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -108,8 +109,8 @@ begin
         wait;
 
 ```
-
-
+***simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/2.png)
 ***Listing of VHDL code from source file top.vhd***
 ``` vhdl
 hex2seg : entity work.hex_7seg
