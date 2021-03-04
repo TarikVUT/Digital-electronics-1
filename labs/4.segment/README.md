@@ -1,7 +1,8 @@
 
 # 4.Segment
+[xalkan02 Digital-electronics-1 - segment](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/4.segment)
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/1.PNG)
-### 1 table with connection of 7-segment displays on Nexys A7 board
+### (1) table with connection of 7-segment displays on Nexys A7 board.
 | **Hex** | **Input** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -24,8 +25,8 @@
 
 
 
-### 2 Seven-segment display decoder
-***Listing of VHDL architecture from source file hex_7seg.vhd***
+### (2) Seven-segment display decoder
+***(a) Listing of VHDL architecture from source file hex_7seg.vhd.***
 ``` vhdl
 architecture Behavioral of hex_7seg is
 
@@ -70,7 +71,7 @@ begin
 
 ```
 
-***Listing of VHDL stimulus process from testbench file tb_hex_7seg.vhd***
+***(b) Listing of VHDL stimulus process from testbench file tb_hex_7seg.vhd.***
 ```vhdl
 architecture Behavioral of tb_hex_7seg is
 signal s_hex             : std_logic_vector(4-1 downto 0);
@@ -109,9 +110,9 @@ begin
         wait;
 
 ```
-***simulation***
+ ***(c) simulation***
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/2.png)
-***Listing of VHDL code from source file top.vhd***
+***(d) Listing of VHDL code from source file top.vhd***
 ``` vhdl
 hex2seg : entity work.hex_7seg
         port map(
@@ -128,6 +129,7 @@ hex2seg : entity work.hex_7seg
     AN <= b"1111_0111";
 
 ```
+### (3) LED(7:4)
 Truth table for LEDs(7:4)
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
