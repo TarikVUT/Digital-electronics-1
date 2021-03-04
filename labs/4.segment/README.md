@@ -25,7 +25,7 @@
 
 
 
-### (2) Seven-segment display decoder
+### (2) Seven-segment display decoder.
 ***(a) Listing of VHDL architecture from source file hex_7seg.vhd.***
 ``` vhdl
 architecture Behavioral of hex_7seg is
@@ -112,7 +112,7 @@ begin
 ```
  ***(c) simulation***
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/2.png)
-***(d) Listing of VHDL code from source file top.vhd***
+***(d) Listing of VHDL code from source file top.vhd.***
 ``` vhdl
 hex2seg : entity work.hex_7seg
         port map(
@@ -129,8 +129,8 @@ hex2seg : entity work.hex_7seg
     AN <= b"1111_0111";
 
 ```
-### (3) LED(7:4)
-***Truth table for LEDs(7:4)***
+### (3) LED(7:4).
+***Truth table for LEDs(7:4).***
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 1 | 0 | 0 | 1 |
