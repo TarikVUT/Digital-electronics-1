@@ -131,7 +131,7 @@ hex2seg : entity work.hex_7seg
 
 ```
 ### (3) LED(7:4).
-***Truth table for LEDs(7:4).***
+***(a)Truth table for LEDs(7:4).***
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 1 | 0 | 0 | 1 |
@@ -150,7 +150,7 @@ hex2seg : entity work.hex_7seg
 | d | 1101 | 0 | 1 | 1 | 0 |
 | E | 1110 | 0 | 1 | 0 | 0 |
 | F | 1111 | 0 | 1 | 1 | 0 |
-### Code in VHDL top
+***(b) VHDL code for LEDs(7:4)***
 ```vhdl
 hex2seg : entity work.hex_7seg
         port map(
@@ -183,5 +183,5 @@ hex2seg : entity work.hex_7seg
 
 
 ```
-***Simulation***
+***(c)Simulation***
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/2.png)
