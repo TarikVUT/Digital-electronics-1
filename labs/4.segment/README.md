@@ -111,7 +111,7 @@ begin
 
 ```
  ***(c) simulation***
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/2.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/3.png)
 ***(d) Listing of VHDL code from source file top.vhd.***
 ``` vhdl
 hex2seg : entity work.hex_7seg
