@@ -2,11 +2,13 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Mar  8 12:30:35 2021
-# Process ID: 123748
+# Start of session at: Mon Mar  8 09:57:51 2021
+# Process ID: 143664
 # Current directory: E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/4.segment/display/display.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/4.segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/4.segment/display/display.sim/sim_1/behav/xsim/xsim.dir/tb_hex_7seg_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/4.segment/display/display.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/4.segment/display/display.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source E:/VUT/4 -notrace
+couldn't read file "E:/VUT/4": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar  8 09:57:51 2021...

@@ -20,12 +20,12 @@
 
 
 library IEEE;
-library math_real;
+--library math;
 use IEEE.STD_LOGIC_1164.ALL;
-
+--use math.ALL;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -64,6 +64,8 @@ hex2seg : entity work.hex_7seg
         );
 -- Connect one common anode to 3.3V
     AN <= b"1111_0111";
+     -- Display input value on LEDs
+    LED(3 downto 0) <= SW;
      --Turn LED(4) on if input value is equal to 0, ie "0000"
     LED(4)  <= '1' when (SW = "0000") else '0';
 
@@ -76,6 +78,6 @@ hex2seg : entity work.hex_7seg
     -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
     LED(7) <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000") else '0';
 
-    -- Display input value on LEDs
-    LED(3 downto 0) <= SW;
+
+
 end Behavioral;
