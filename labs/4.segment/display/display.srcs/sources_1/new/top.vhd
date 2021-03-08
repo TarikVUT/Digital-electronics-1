@@ -20,6 +20,7 @@
 
 
 library IEEE;
+library math_real;
 use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
@@ -63,6 +64,17 @@ hex2seg : entity work.hex_7seg
         );
 -- Connect one common anode to 3.3V
     AN <= b"1111_0111";
+     --Turn LED(4) on if input value is equal to 0, ie "0000"
+    LED(4)  <= '1' when (SW = "0000") else '0';
+
+    -- Turn LED(5) on if input value is greater than 9
+    LED(5) <= '1' when (unsigned(SW) > 9) else '0';
+
+    -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
+    LED(6) <= '1' when (unsigned(SW) mod 2 = 1) else '0';
+
+    -- Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
+    LED(7) <= '1' when (SW = "0001" or SW = "0010" or SW = "0100" or SW = "1000") else '0';
 
     -- Display input value on LEDs
     LED(3 downto 0) <= SW;
