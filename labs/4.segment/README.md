@@ -1,6 +1,8 @@
 
 # 4.Segment
-### 1 table with connection of 7-segment displays on Nexys A7 board
+[xalkan02 Digital-electronics-1 - segment](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/4.segment) \
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/1.PNG)
+### (1) table with connection of 7-segment displays on Nexys A7 board.
 | **Hex** | **Input** | **a** | **b** | **c** | **d** | **e** | **f** | **g** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
@@ -10,7 +12,7 @@
 | 4 | 0100 | 1 | 0 | 0 | 1 | 1 | 0 | 0 |
 | 5 | 0101 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |
 | 6 | 0110 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
-| 7 | 0111 | 0 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 7 | 0111 | 0 | 0 | 0 | 1 | 1 | 1 | 1 |
 | 8 | 1000 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 9 | 1001 | 0 | 0 | 0 | 1 | 1 | 0 | 0 |
 | A | 1010 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
@@ -23,8 +25,8 @@
 
 
 
-### 2 Seven-segment display decoder
-***Listing of VHDL architecture from source file hex_7seg.vhd***
+### (2) Seven-segment display decoder.
+***(a) Listing of VHDL architecture from source file hex_7seg.vhd.***
 ``` vhdl
 architecture Behavioral of hex_7seg is
 
@@ -47,7 +49,7 @@ begin
            when "0110" =>
                 seg_o <= "0100000";     -- 6
            when "0111" =>
-                seg_o <= "0001110";     -- 7
+                seg_o <= "0001111";     -- 7
            when "1000" =>
                 seg_o <= "0000000";     -- 8
            when "1001" =>
@@ -69,7 +71,7 @@ begin
 
 ```
 
-***Listing of VHDL stimulus process from testbench file tb_hex_7seg.vhd***
+***(b) Listing of VHDL stimulus process from testbench file tb_hex_7seg.vhd.***
 ```vhdl
 architecture Behavioral of tb_hex_7seg is
 signal s_hex             : std_logic_vector(4-1 downto 0);
@@ -108,9 +110,9 @@ begin
         wait;
 
 ```
-
-
-***Listing of VHDL code from source file top.vhd***
+ ***(c) simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/4.segment/images/2.png)
+***(d) Listing of VHDL code from source file top.vhd.***
 ``` vhdl
 hex2seg : entity work.hex_7seg
         port map(
@@ -127,7 +129,8 @@ hex2seg : entity work.hex_7seg
     AN <= b"1111_0111";
 
 ```
-Truth table for LEDs(7:4)
+### (3) LED(7:4).
+***Truth table for LEDs(7:4).***
 | **Hex** | **Inputs** | **LED4** | **LED5** | **LED6** | **LED7** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0000 | 1 | 0 | 0 | 1 |
