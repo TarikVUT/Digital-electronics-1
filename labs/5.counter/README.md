@@ -1,6 +1,6 @@
 
 # 4.Counter
-[xalkan02 Digital-electronics-1 - segment](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/5.counter) \
+[xalkan02 Digital-electronics-1 - counter](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/5.counter) \
 **Table with calculated values**
 | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
 | :-: | :-: | :-: | :-: |
