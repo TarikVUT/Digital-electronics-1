@@ -1,6 +1,7 @@
 
 # 4.Counter
 [xalkan02 Digital-electronics-1 - counter](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/5.counter) \
+
 **Table with calculated values**
 | **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
 | :-: | :-: | :-: | :-: |
@@ -12,4 +13,62 @@
 | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
 
 
+## 2 Bidirectional counter \
+***(a)VHDL code of the process p_cnt_up_down***
+``` vhdl
+begin
 
+    p_cnt_up_down : process(clk)
+    begin
+        if rising_edge(clk) then
+        
+            if (reset = '1') then                    -- Synchronous reset
+            s_cnt_local <= (others => '0');          -- Clear all bits
+
+            elsif (en_i = '1') then 
+            if(cnt_up_i = '1') then                  -- Test if counter is enabled
+            s_cnt_local <= s_cnt_local + 1;
+            else
+            s_cnt_local <= s_cnt_local -1;          
+             
+           end if;
+               
+                end if;
+        end if;
+    end process p_cnt_up_down;
+```
+***(b)VHDL code reset ***
+``` vhdl
+p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 10 ns;
+        
+    -- Reset activated
+        s_reset <= '1';
+        wait for 45 ns;
+
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
+
+```
+***(c)VHDL code reset ***
+``` vhdl
+ p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+    
+        s_en     <= '1';             -- Enable counting
+        s_cnt_up <= '1';
+        wait for 260 ns;             -- Change counter direction
+        s_cnt_up <= '0';
+        wait for 220 ns;
+
+        -- Disable counting
+        s_en     <= '0';
+
+        report "Stimulus process finished" severity note;
+        wait;
+    end process p_stimulus;
+```
