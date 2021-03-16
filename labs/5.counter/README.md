@@ -37,7 +37,7 @@ begin
         end if;
     end process p_cnt_up_down;
 ```
-***(b)VHDL code of the **reset** `p_cnt_up_down`***
+***(b)VHDL code of the reset from***`tb_cnt_up_down.vhd`
 ``` vhdl
 p_reset_gen : process
     begin
@@ -53,7 +53,8 @@ p_reset_gen : process
     end process p_reset_gen;
 
 ```
-***(c)VHDL code reset***
+***(c)VHDL code of the stimulus from***`tb_cnt_up_down.vhd`
+``` vhdl
 ``` vhdl
  p_stimulus : process
     begin
