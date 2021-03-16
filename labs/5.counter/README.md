@@ -13,7 +13,7 @@
 | 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
 
 
-## 2 Bidirectional counter \
+## 2 Bidirectional counter 
 ***(a)VHDL code of the process p_cnt_up_down***
 ``` vhdl
 begin
@@ -37,7 +37,7 @@ begin
         end if;
     end process p_cnt_up_down;
 ```
-***(b)VHDL code reset ***
+***(b)VHDL code reset***
 ``` vhdl
 p_reset_gen : process
     begin
@@ -53,7 +53,7 @@ p_reset_gen : process
     end process p_reset_gen;
 
 ```
-***(c)VHDL code reset ***
+***(c)VHDL code reset***
 ``` vhdl
  p_stimulus : process
     begin
