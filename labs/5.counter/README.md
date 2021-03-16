@@ -1,6 +1,6 @@
 
 # 5.Counter
-[xalkan02 Digital-electronics-1 - counter](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/5.counter) \
+[xalkan02 Digital-electronics-1 - counter](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/5.counter) 
 ## 1.Preparation tasks
 ***(a).Figure with connection of push buttons on Nexys A7 board,***\
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/5.counter/images/n4r.png)
