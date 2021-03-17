@@ -1,6 +1,6 @@
 
 # 6.display_driver
-[xalkan02 Digital-electronics-1 - 6.display_driver](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/6.display_driver) \
+[xalkan02 Digital-electronics-1 - 6.display_driver](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/6.display_driver) 
 
 ### 1.Timing diagram.
 
