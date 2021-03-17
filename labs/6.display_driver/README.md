@@ -1,6 +1,6 @@
 
-# 5.Counter
-[xalkan02 Digital-electronics-1 - counter](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/5.counter) \
+# 6.display_driver
+[xalkan02 Digital-electronics-1 - 6.display_driver](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/6.display_driver) 
 
 ### 1.Timing diagram.
 
@@ -32,6 +32,7 @@
   },
 }
 ```
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/6.display_driver/images/1.png)\
 ### 2.Display drive
 ***(a).VHDL code of the process `p_mux`***
 ``` vhdl
@@ -169,9 +170,8 @@ end architecture testbench;
 
 ```
 ***(c).simulated time waveforms***
-![]()
-
-***(d).VHDL code of architecture `top layer`
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/6.display_driver/images/2.png)
+***(d).VHDL code of architecture `top layer`***
 ```vhdl
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
