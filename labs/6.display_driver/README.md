@@ -170,7 +170,7 @@ end architecture testbench;
 
 ```
 ***(c).simulated time waveforms***
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/6.display_driver/images/2.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/6.display_driver/images/2.png)\
 
 ***(d).VHDL code of architecture `top layer`***
 ```vhdl
