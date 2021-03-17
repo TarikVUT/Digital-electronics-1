@@ -1,89 +1,177 @@
 
 # 5.Counter
 [xalkan02 Digital-electronics-1 - counter](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/5.counter) \
-## 1.Preparation tasks
-***(a).Figure with connection of push buttons on Nexys A7 board,***
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/5.counter/images/n4r.png)
 
-***(b).Table with calculated values***
-| **Time interval** | **Number of clk periods** | **Number of clk periods in hex** | **Number of clk periods in binary** |
-| :-: | :-: | :-: | :-: |
-| 2&nbsp;ms | 200 000 | `x"3_0d40"` | `b"0011_0000_1101_0100_0000"` |
-| 4&nbsp;ms | 400 000 | `x"6_1a80"` | `b"0110_0001_1010_1000_0000"` |
-| 10&nbsp;ms|1 000 000 | `x"f_4240"` | `b"1111_0100_0010_0100_0000"` |
-| 250&nbsp;ms |25 000 000 | `x"17d_7840"` | `b"0001_0111_1101_0111_1000_0100_0000"` |
-| 500&nbsp;ms |50 000 000 | `x"2fa_f080"` | `b"0010_1111_1010_1111_0000_1000_0000"` |
-| 1&nbsp;sec | 100 000 000 | `x"5F5_E100"` | `b"0101_1111_0101_1110_0001_0000_0000"` |
+### 1.Timing diagram.
 
-
-## 2.Bidirectional counter. 
-***(a)VHDL code of the **process** `p_cnt_up_down`***
 ``` vhdl
-begin
-
-    p_cnt_up_down : process(clk)
-    begin
-        if rising_edge(clk) then
-        
-            if (reset = '1') then                    -- Synchronous reset
-            s_cnt_local <= (others => '0');          -- Clear all bits
-
-            elsif (en_i = '1') then 
-            if(cnt_up_i = '1') then                  -- Test if counter is enabled
-            s_cnt_local <= s_cnt_local + 1;
-            else
-            s_cnt_local <= s_cnt_local -1;          
-             
-           end if;
-               
-                end if;
-        end if;
-    end process p_cnt_up_down;
+{
+  signal:
+  [
+    ['Digit position',
+      {name: 'Common anode: AN(3)', wave: 'xx01..01..01'},
+      {name: 'AN(2)', wave: 'xx101..01..0'},
+      {name: 'AN(1)', wave: 'xx1.01..01..'},
+      {name: 'AN(0)', wave: 'xx1..01..01.'},
+    ],
+    ['Seven-segment data',
+      {name: '4-digit value to display', wave: 'xx3333555599', data: ['3','1','4','2','3','1','4','2','3','1']},
+      {name: 'Cathod A: CA', wave: 'xx01.0.1.0.1'},
+      {name: 'CB', wave: 'xx0.........'},
+      {name: 'CC', wave: 'xx0..10..10.'},
+      {name: 'CD', wave: 'xx01.0.1.0.1'},
+      {name: 'CE', wave: 'xx1..01..01.'},
+      {name: 'CF', wave: 'xx1.01..01..'},
+      {name: 'CG', wave: 'xx010..10..1'},
+    ],
+    {name: 'Decimal point: DP', wave: 'xx01..01..01'},
+  ],
+  head:
+  {
+    text: '                    4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms   4ms',
+  },
+}
 ```
-***(b)VHDL code of the reset from***`tb_cnt_up_down.vhd`
+### 2.Display drive
+***(a).VHDL code of the process `p_mux`***
 ``` vhdl
-p_reset_gen : process
+  p_mux : process(s_cnt, data0_i, data1_i, data2_i, data3_i, dp_i)
+    begin
+        case s_cnt is
+            when "11" =>
+                s_hex <= data3_i;
+                dp_o  <= dp_i(3);
+                dig_o <= "0111";
+
+            when "10" =>
+                s_hex <= data2_i;
+                dp_o  <= dp_i(2);
+                dig_o <= "1011";
+
+            when "01" =>
+               s_hex <= data1_i;
+                dp_o  <= dp_i(1);
+                dig_o <= "1101";
+
+            when others =>
+              s_hex <= data0_i;
+                dp_o  <= dp_i(0);
+                dig_o <= "1110";
+        end case;
+    end process p_mux;
+
+```
+***(b).VHDL code of testbench file `tb_driver_7seg_4digits`***
+```vhdl
+library ieee;
+use ieee.std_logic_1164.all;
+
+------------------------------------------------------------------------
+-- Entity declaration for testbench
+------------------------------------------------------------------------
+entity tb_driver_7seg_4digits is
+    -- Entity of testbench is always empty
+end entity tb_driver_7seg_4digits;
+
+------------------------------------------------------------------------
+-- Architecture body for testbench
+------------------------------------------------------------------------
+architecture testbench of tb_driver_7seg_4digits is
+
+    -- Local constants
+    constant c_CLK_100MHZ_PERIOD : time    := 10 ns;
+
+    --Local signals
+      signal s_clk_100MHz : std_logic;
+   -- signal s_clk          : std_logic;
+      signal s_reset        : std_logic;
+      
+      signal s_data0_i  : std_logic_vector(4 - 1 downto 0);
+      signal s_data1_i  : std_logic_vector(4 - 1 downto 0);
+      signal s_data2_i  : std_logic_vector(4 - 1 downto 0);
+      signal s_data3_i  : std_logic_vector(4 - 1 downto 0);
+      signal s_dp_i     : std_logic_vector(4 - 1 downto 0);
+      
+      signal s_dp_o     : std_logic; 
+      
+     signal s_seg_o     : std_logic_vector(7 - 1 downto 0);  
+     signal s_dig_o     : std_logic_vector(4 - 1 downto 0);
+          
+   
+
+begin
+    -- Connecting testbench signals with driver_7seg_4digits entity
+    -- (Unit Under Test)
+  uut_driver_7seg : entity work.driver_7seg_4digits
+ port map(          
+       clk      => s_clk_100MHZ,    
+       reset    => s_reset,  
+          
+       data0_i  => s_data0_i,
+       data1_i  => s_data1_i,
+       data2_i  => s_data2_i,
+       data3_i  => s_data3_i,
+                 
+       dp_i     => s_dp_i,         
+       dp_o     => s_dp_o, 
+       seg_o    => s_seg_o,       
+       dig_o    => s_dig_o  
+ );                   
+    -------------         -------------------------------------------------------
+    -- Clock generation process
+    --------------------------------------------------------------------
+    p_clk_gen : process
+    begin
+        while now < 750 ns loop         
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+
+    --------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+   p_reset_gen : process
     begin
         s_reset <= '0';
         wait for 10 ns;
-        
-    -- Reset activated
-        s_reset <= '1';
-        wait for 45 ns;
+        s_reset <= '1';         -- Reset activated
+        wait for 50 ns;
 
         s_reset <= '0';
         wait;
     end process p_reset_gen;
-
-```
-***(c)VHDL code of the stimulus from***`tb_cnt_up_down.vhd`
-``` vhdl
-``` vhdl
- p_stimulus : process
+    
+p_stimulus : process
     begin
         report "Stimulus process started" severity note;
-    
-        s_en     <= '1';             -- Enable counting
-        s_cnt_up <= '1';
-        wait for 260 ns;             -- Change counter direction
-        s_cnt_up <= '0';
-        wait for 220 ns;
-
-        -- Disable counting
-        s_en     <= '0';
-
-        report "Stimulus process finished" severity note;
+        s_data3_i <= "0011"; --  3 
+        s_data2_i <= "0001"; --  1 
+        s_data1_i <= "0100"; --  4 
+        s_data0_i <= "0010"; --  2 
+        s_dp_i    <= "0111"; 
+        
+        wait for 385 ns;
+        s_data3_i <= "0001"; -- 1
+        s_data2_i <= "0000"; -- 0
+        s_data1_i <= "0111"; -- 7
+        s_data0_i <= "0101"; -- 5
+        
+      report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
+ 
+
+end architecture testbench;
+
 ```
-***(d).simulation.***
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/5.counter/images/2.png)
+***(c).simulated time waveforms***
+![]()
 
-**Change the direction**
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/5.counter/images/3.png)
-
-## 3.Top level
-***(a).VHDL code from source file `top.vhd`.***
+***(d).VHDL code of architecture `top layer`
 ```vhdl
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -99,81 +187,67 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity top is
     Port (
-         CLK100MHZ : in  STD_LOGIC;
-         BTNC      : in  STD_LOGIC;
-         SW        : in  STD_LOGIC_VECTOR (1-1 downto 0);
-         LED       : out STD_LOGIC_VECTOR (4-1 downto 0);
-         CA        : out STD_LOGIC; 
-         CB        : out STD_LOGIC; 
-         CC        : out STD_LOGIC; 
-         CD        : out STD_LOGIC; 
-         CE        : out STD_LOGIC; 
-         CF        : out STD_LOGIC; 
-         CG        : out STD_LOGIC; 
-         AN        : out STD_LOGIC_VECTOR (8-1 downto 0)
-           
-           );
+        CLK100MHZ   :   in    std_logic;
+        BTNC        :   in    std_logic;        
+        SW          :   in    std_logic_vector(16 - 1 downto 0);       
+        CA          :   out   std_logic;
+        CB          :   out   std_logic;
+        CC          :   out   std_logic;
+        CD          :   out   std_logic;
+        CE          :   out   std_logic;
+        CF          :   out   std_logic;
+        CG          :   out   std_logic;        
+        DP          :   out   std_logic;       
+        AN          :   out   std_logic_vector(8 - 1 downto 0)	
+    );
 end top;
 
+------------------------------------------------------------------------
+-- Architecture body for top level
+------------------------------------------------------------------------
 architecture Behavioral of top is
-
-    -- Internal clock enable
-    signal s_en  : std_logic;
-    -- Internal counter
-    signal s_cnt : std_logic_vector(4 - 1 downto 0);
-
 begin
-
     --------------------------------------------------------------------
-    -- Instance (copy) of clock_enable entity
-    clk_en0 : entity work.clock_enable
-        generic map(
-           
-             g_MAX => 100000000
-        )
+    -- Instance (copy) of driver_7seg_4digits entity
+    driver_seg_4 : entity work.driver_7seg_4digits
         port map(
-     
-             clk   => CLK100MHZ,
-             reset => BTNC,
-             ce_o  => s_en
+            clk         => CLK100MHZ,
+            reset       => BTNC,
+            
+            data0_i(3)  => SW(3),
+            data0_i(2)  => SW(2),
+            data0_i(1)  => SW(1),
+            data0_i(0)  => SW(0),
+            
+            data1_i(3)  => SW(7),
+            data1_i(2)  => SW(6),
+            data1_i(1)  => SW(5),
+            data1_i(0)  => SW(4),
+            
+            data2_i(3)  => SW(11),
+            data2_i(2)  => SW(10),
+            data2_i(1)  => SW(9),
+            data2_i(0)  => SW(8),
+            
+            data3_i(3)  => SW(15),
+            data3_i(2)  => SW(14),
+            data3_i(1)  => SW(13),
+            data3_i(0)  => SW(12),
+            
+            dig_o       => AN(4-1 downto 0),
+            seg_o(0)    => CA,
+            seg_o(1)    => CB,
+            seg_o(2)    => CC,
+            seg_o(3)    => CD,
+            seg_o(4)    => CE,
+            seg_o(5)    => CF,
+            seg_o(6)    => CG,
+            
+          
+            dp_i        => "0111",
+            dp_o        => DP
         );
-
-    --------------------------------------------------------------------
-    -- Instance (copy) of cnt_up_down entity
-    bin_cnt0 : entity work.cnt_up_down
-        generic map(
-           g_CNT_WIDTH =>4
-                    )
-        port map(
-             clk         => CLK100MHZ,
-             reset       => BTNC,
-             en_i        => s_en,
-             cnt_up_i    => SW(0), 
-             cnt_o       => s_cnt
-                  );
-
-    -- Display input value on LEDs
-    LED(3 downto 0) <= s_cnt;
-
-    --------------------------------------------------------------------
-    -- Instance (copy) of hex_7seg entity
-    hex2seg : entity work.hex_7seg
-        port map(
-            hex_i    => s_cnt,
-            seg_o(6) => CA,
-            seg_o(5) => CB,
-            seg_o(4) => CC,
-            seg_o(3) => CD,
-            seg_o(2) => CE,
-            seg_o(1) => CF,
-            seg_o(0) => CG
-        );
-
-    -- Connect one common anode to 3.3V
-    AN <= b"1111_1110";
 
 end architecture Behavioral;
-
 ```
-***(b).Image of the top layer including both counters***
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/5.counter/images/4.png)
+### 3.Eight-digit driver.
