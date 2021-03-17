@@ -32,6 +32,7 @@
   },
 }
 ```
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/6.display_driver/images/1.png)\
 ### 2.Display drive
 ***(a).VHDL code of the process `p_mux`***
 ``` vhdl
@@ -169,9 +170,9 @@ end architecture testbench;
 
 ```
 ***(c).simulated time waveforms***
-![]()
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/6.display_driver/images/2.png)
 
-***(d).VHDL code of architecture `top layer`
+***(d).VHDL code of architecture `top layer`***
 ```vhdl
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
