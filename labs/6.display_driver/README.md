@@ -155,6 +155,27 @@ p_stimulus : process
         s_data0_i <= "0010"; --  2 
         s_dp_i    <= "0111"; 
         
+  -- assert segment digit = 2
+        assert(s_seg_o = "0010010")
+        report "First segment wrong digit." severity note;
+        
+        wait for 4 ms;   
+  -- assert segment digit = 4
+        assert(s_seg_o = "1001100")
+        report "Second segment wrong digit." severity note;
+        
+        wait for 4 ms;   
+  -- assert segment digit = 1
+        assert(s_seg_o = "1001111")
+        report "Third segment wrong digit." severity note;
+        
+        wait for 4 ms;   
+  -- assert decimal point
+        assert(s_dp_o = '0')
+        report "Decimal point on wrong digit." severity note;
+  -- assert segment digit = 3
+        assert(s_seg_o = "0000110")
+        report "Last segment wrong digit." severity note;
         wait for 385 ns;
         s_data3_i <= "0001"; -- 1
         s_data2_i <= "0000"; -- 0
