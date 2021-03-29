@@ -1,6 +1,6 @@
 
 # 7.ffs
-[xalkan02 Digital-electronics-1 - 7.Latches and Flip-flops](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/7.ffs/README.md) 
+[xalkan02 Digital-electronics-1 - 7.Latches and Flip-flops](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/README.md) 
 
 ### 1.Preparation tasks
 ***Write characteristic equations and complete truth tables for D, JK, T flip-flops.***
