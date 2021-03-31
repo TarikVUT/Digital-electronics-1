@@ -15,6 +15,8 @@
 | :-: | :-: | :-: | :-: | :-: |
 | LD16 | N15, M16, R12 | `1,0,0` | `1,1,0` | `0,1,0` |
 | LD17 | N16, R11, G14 | `1,0,0` | `1,1,0` | `0,1,0` |
+***Figure with connection of RGB LEDs on Nexys A7 board***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/n4r.png)
 
 ## 2.Traffic light controller:
 ***(a).VHDL code of sequential process*** `p_traffic_fsm`
@@ -98,7 +100,7 @@
         end if; -- Rising edge
     end process p_traffic_fsm;
 ```
-***VHDL code of combinatorial process*** `p_output_fsm`
+***(b).VHDL code of combinatorial process*** `p_output_fsm`
 ```vhdl
 p_output_fsm : process(s_state)
     begin
@@ -127,3 +129,6 @@ p_output_fsm : process(s_state)
         end case;
     end process p_output_fsm;
 ```
+***(c).simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/simulation.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/simulation2.png)
