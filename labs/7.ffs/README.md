@@ -1,9 +1,9 @@
 
 # 7.ffs
-[xalkan02 Digital-electronics-1 - 6.display_driver](https://github.com/TarikVUT/Digital-electronics-1/edit/main/labs/7.ffs/README.md) 
+[xalkan02 Digital-electronics-1 - 7.Latches and Flip-flops](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/README.md) 
 
 ### 1.Preparation tasks
-***Write characteristic equations and complete truth tables for D, JK, T flip-flops.**
+***Write characteristic equations and complete truth tables for D, JK, T flip-flops.***
 
  | **D** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
@@ -146,9 +146,9 @@ p_stimulus : process
         wait;
     end process p_stimulus;
 ```
-![]()
-***(c).simulation***
 
+***(c).simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/images/tb_d_latch.png)
 
 ## 3.Flip-flops.
 ***(a).VHDL clock.***
@@ -282,7 +282,8 @@ end process p_d_ff_arst;
     end process p_stimulus;
 
 ```
-![]()
+***simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/images/d_ff_arst.png)
 ***(c).VHDL code of the processes***`p_d_ff_rst`
 ```vhdl
 p_d_ff_rst :  process (clk)
@@ -400,7 +401,8 @@ p_reset_gen : process
         wait;
    end process p_stimulus;
 ```
-![]()
+***simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/images/d_ff_rst.png)
 ***(d).VHDL code of the processes***`p_jk_ff_rst`
 ```vhdl
  p_jk_ff_rst : process(clk)
@@ -474,7 +476,8 @@ p_reset_gen : process
     end process p_stimulus;
 
 ```
-![]()
+***simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/images/jk_ff_rst.png)
 ***(e).VHDL code of the processes***`p_t_ff_rst`
 ```vhdl
   p_t_ff_rst :process (clk)
@@ -596,6 +599,7 @@ p_reset_gen : process
         wait;
    end process p_stimulus;
 ```
-![]()
+***simulation***
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/images/t_ff_rst.png)
 ## Shift register.
-![]()
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/7.ffs/images/3.png)
