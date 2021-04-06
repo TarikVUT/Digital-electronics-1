@@ -1,7 +1,7 @@
 
 # 8.Traffic_lights
 
-[Link : xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/8.traffic_lights)
+[Link : xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/README.md)
 ## 1.Preparation tasks:
 ***(a).Table***
 | **Input P** | `0` | `0` | `1` | `1` | `0` | `1` | `0` | `1` | `1` | `1` | `1` | `0` | `0` | `1` | `1` | `1` |
