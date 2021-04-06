@@ -151,7 +151,7 @@ p_output_fsm : process(s_state)
 ***(b).Diagram for smart Traffic light***
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/Traffic%20senzor.png)
 
-***(c).VHDL code of sequential process `p_smart_traffic_fsm`
+***(c).VHDL code of sequential process***`p_smart_traffic_fsm`
 ```vhdl
 p_smart_traffic_fsm : process(clk)
    
