@@ -123,8 +123,9 @@ begin
                                 s_state <= WEST_GO;
                               else  
                                  s_state <= WEST_WAIT;
+                                 s_cnt   <=c_ZERO;
                               end if;
-                          s_cnt   <=c_ZERO;
+                          
                        end if;
                        
                        
@@ -155,9 +156,10 @@ begin
                                      s_state <= SOUTH_GO;
                                else      
                                      s_state <= SOUTH_WAIT;
+                                     s_cnt <= c_ZERO;
                                end if; 
                                     
-                             s_cnt <= c_ZERO;
+                            
                          end if;
                        
                      when SOUTH_WAIT =>
