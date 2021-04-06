@@ -3,14 +3,14 @@
 
 [Link : xalkan02 Digital-electronics-1](https://github.com/TarikVUT/Digital-electronics-1/tree/main/labs/8.traffic_lights)
 ## 1.Preparation tasks:
-
+***(a).Table***
 | **Input P** | `0` | `0` | `1` | `1` | `0` | `1` | `0` | `1` | `1` | `1` | `1` | `0` | `0` | `1` | `1` | `1` |
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **Clock** | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) | ![rising](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/1.png) |
 | **State** | A | A | B | C | A | B | A | B | C | D | B | A | A | B | C | D |
 | **Output R** | `0` | `0` | `0` | `0` | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0` |  `0` |  `0` | `1` |
 
-
+***(b).Table for LED***
 | **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
 | :-: | :-: | :-: | :-: | :-: |
 | LD16 | N15, M16, R12 | `1,0,0` | `1,1,0` | `0,1,0` |
@@ -22,7 +22,7 @@
 ## 2.Traffic light controller:
 
 ***(a).Diagram for Traffic light***
-![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/traffic.png)
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/traffic.png)\
 ***(b).VHDL code of sequential process*** `p_traffic_fsm`
 ```vhdl
  p_traffic_fsm : process(clk)
@@ -139,14 +139,14 @@ p_output_fsm : process(s_state)
 
 ## 3.Smart controller
 ***(a).Table for smart controller***
-| **Current state** | **Direction South** | **Direction West** | **Delay** | **Senzor** |
+| **Current state** | **Direction South** | **Direction West** | **Delay** | **Signal form the Senzor** |
 | :-- | :-: | :-: | :-: | :-: |
-| `STOP1`      | red    | red | 1 sec | NO |
-| `WEST_GO`    | red    | green | 4 sec | YES |
-| `WEST_WAIT`  | red    | yellow | 2 sec | NO |
-| `STOP2`      | red    | red | 1 sec | NO |
-| `SOUTH_GO`   | green  | red | 4 sec | YES |
-| `SOUTH_WAIT` | yellow | red | 2 sec | NO |
+| `STOP1`      | red    | red | 1 sec | 0 |
+| `WEST_GO`    | red    | green | 4 sec | 1 |
+| `WEST_WAIT`  | red    | yellow | 2 sec | 0 |
+| `STOP2`      | red    | red | 1 sec | 0|
+| `SOUTH_GO`   | green  | red | 4 sec | 1 |
+| `SOUTH_WAIT` | yellow | red | 2 sec | 0 |
 
 ***(b).Diagram for smart Traffic light***
 ![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/Traffic%20senzor.png)
