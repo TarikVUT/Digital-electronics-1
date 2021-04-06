@@ -22,7 +22,7 @@
 ## 2.Traffic light controller:
 
 ***(a).Diagram for Traffic light***
-![]()
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/traffic.png)
 ***(b).VHDL code of sequential process*** `p_traffic_fsm`
 ```vhdl
  p_traffic_fsm : process(clk)
@@ -149,7 +149,7 @@ p_output_fsm : process(s_state)
 | `SOUTH_WAIT` | yellow | red | 2 sec | NO |
 
 ***(b).Diagram for smart Traffic light***
-
+![](https://github.com/TarikVUT/Digital-electronics-1/blob/main/labs/8.traffic_lights/image/Traffic%20senzor.png)
 
 ***(c).VHDL code of sequential process `p_smart_traffic_fsm`
 ```vhdl
