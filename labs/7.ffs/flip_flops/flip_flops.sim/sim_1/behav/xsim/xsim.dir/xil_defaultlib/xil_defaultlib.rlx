@@ -1,0 +1,14 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd,1617052987,vhdl,,,,tb_d_ff_arst,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_rst.vhd,1617046729,vhdl,,,,tb_d_ff_rst,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_latch.vhd,1617040695,vhdl,,,,tb_d_latch,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_jk_ff_rst.vhd,1617045370,vhdl,,,,tb_jk_ff_rst,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd,1617048116,vhdl,,,,tb_t_ff_rst,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sources_1/new/d_ff_arst.vhd,1616666151,vhdl,E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_arst.vhd,,,d_ff_arst,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sources_1/new/d_ff_rst.vhd,1617045370,vhdl,E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_ff_rst.vhd,,,d_ff_rst,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sources_1/new/d_latch.vhd,1616612985,vhdl,E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_d_latch.vhd,,,d_latch,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sources_1/new/jk_ff_rst.vhd,1617043477,vhdl,E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_jk_ff_rst.vhd,,,jk_ff_rst,,,,,,,,
+E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sources_1/new/t_ff_rst.vhd,1617047679,vhdl,E:/VUT/4 Semester/DE1/Digital-electronics-1/labs/7.ffs/flip_flops/flip_flops.srcs/sim_1/new/tb_t_ff_rst.vhd,,,t_ff_rst,,,,,,,,
